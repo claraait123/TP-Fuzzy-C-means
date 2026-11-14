@@ -65,7 +65,7 @@ def segmenter_image(path, K=2, m=2.0, eps=1e-4):
     cartes = [U[:, j].reshape(h, w) for j in range(K)]
     dure = U.argmax(axis=1).reshape(h, w)
 
-    # Affichage
+    # Affichage (auteur : Gemini)
     fig, ax = plt.subplots(1, K + 2, figsize=(4 * (K + 2), 4))
     ax[0].imshow(img, cmap="gray")
     ax[0].set_title("Image originale")
